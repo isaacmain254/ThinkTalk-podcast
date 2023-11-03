@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% load widget_tweaks %}
+
+{% block title %}Sign up{% endblock  %}
+
+{% block navbar %}{% endblock  %}
+
+{% block content %}
+<div class="auth-container">
+    <div class='form-container'>
+        <div class="logo-form">
+            <div class="logo-container">
+                <img src="{% static "images/logo1.png" %}" alt="ThinkTalk Podcast Logo">
+            </div>
+            <h4>Sign Up</h4>
+        <form class='auth-form' action="{% url "account_signup" %}" method="post">
+            {% csrf_token %}
+            <div class="input-container">
+                {{ form.username.errors | safe }}
+                <label for="username" class="username">Username</label> <br>
+                {{ form.username|add_class:"text-input" }}
+            </div>
+            <div class="input-container">
+                {{ form.email.errors | safe }}
+                <label for="email" class="username">Email</label> <br>
+                {{ form.email|add_class:"text-input" }}
+            </div>
+            <div class="input-container">
+                {{ form.password1.errors | safe }}
+                <label for="id_password1" class="username">Password </label> <br>
+                {{ form.password1|add_class:"text-input" }}
+            </div>
+            <div class="input-container">
+                {{ form.password2.errors | safe }}
+                <label for="password2" class="username">Repeat password</label> <br>
+                {{ form.password2|add_class:"text-input" }}
+            </div>
+            <div class="input-container">
+                <input class="submit" type="submit" value="Sign up">
+            </div>
+           <div class="input-container">
+            <hr>
+            <p class='sign-in'>Already have an account? Then please <a href="{{ login_url }}">sign in</a>.</p>
+           </div>
+
+        </form>
+        </div>
+    </div>
+</div>
+{% endblock content %}

@@ -1,0 +1,200 @@
+{% extends "base.html" %}
+
+{% block title %}ThinkTalk Podcast{% endblock  %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="container">
+        <div class="left">
+            {% comment %} authenticated user info {% endcomment %}
+            <div class="user-info-container">
+            <div class="user-info">
+                <div class="profile-images">
+                    <div class="cover-photo">
+                        tyyy
+                    <div class="profile-image">    
+                    </div>
+                    </div>
+                </div>
+                <p class="username">Maina Wambui</p>
+                <span>@maina</span>
+
+                {% comment %} profile activity {% endcomment %}
+                <div class="user-stats">
+                    <div class="posts">
+                        200 <br>
+                        <span>posts</span>
+                    </div>
+                    <div class="followers">
+                        200 <br>
+                        <span>followers</span>
+                    </div>
+                    <div class="following">
+                        200 <br>
+                        <span>following</span>
+                    </div>
+                </div>
+
+                <a class="profile-link" type="button" href="#">Profile</a>
+            </div>
+            </div>
+            <div class="shortcut-container">
+                <p>Your shortcuts</p>
+                <div class="shortcut">
+                    <div  class="shortcut-image"></div>
+                    <span>Programming</span>
+                </div>
+                <div class="shortcut">
+                    <div  class="shortcut-image"></div>
+                    <span>Art and design</span>
+                </div>
+                <div class="shortcut">
+                    <div  class="shortcut-image"></div>
+                    <span>Business</span>
+                </div>
+                <div class="shortcut">
+                    <div  class="shortcut-image"></div>
+                    <span>Startapps</span>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="center">
+            <div class="container-top">
+                <form class="search-form" action="" method="post">
+                    <input id="search-input" type="text" placeholder="search ...">
+                    {% comment %} <input type="submit" value=""> {% endcomment %}
+                </form>
+                
+                <div class="shortcut-links">
+                <a class='add-video-link' href="#">
+                    <i class="fa-solid fa-video"></i>
+                    Video
+                    {% comment %} <i class="fa-solid fa-plus"></i> {% endcomment %}
+                </a>
+                </div>
+              
+            </div>
+            <div class="podcast-container">
+                <div class="podcast">
+                    <div class="video-thumbnail">
+
+                    </div>
+                    <div class="podcast-details">
+                        <div class="podcast-header">
+                            <div class="created-on">
+                                may <br>
+                                30
+                            </div>
+                            <div>
+                            <h3 class="podcast-title">How to come up with a startup idea</h3> <br>
+                            <small>Thur 12:00 zoom meeting</small>
+                            </div>
+                        </div>
+                        <p class="podcast-description">How to come up with a startup idea</p>
+                        <div class="host">
+                            <div class='host-image'></div>
+                            <div class="host-info">
+                            <p>Isaac Maina  </p>
+                            <span>Software developer at Turing</span>
+                            </div>
+                        </div>
+                        <div class="podcast-stats">
+                            <p class="total-views"><span>1</span> views</p>
+                            <div class="like-share">
+                               <a href="#"><i class="fa-solid fa-fire" ></i> 67</a>
+                                <a href="#"><i class="fa-solid fa-share" ></i> 67</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="podcast">
+                    <div class="video-thumbnail">
+
+                    </div>
+                    <div class="podcast-details">
+                        <div class="podcast-header">
+                            <div class="created-on">
+                                may <br>
+                                30
+                            </div>
+                            <div>
+                            <h3 class="podcast-title">How to come up with a startup idea</h3> <br>
+                            <small>Thur 12:00 zoom meeting</small>
+                            </div>
+                        </div>
+                        <p class="podcast-description">How to come up with a startup idea</p>
+                        <div class="host">
+                            <div class='host-image'></div>
+                            <div class="host-info">
+                            <p>Isaac Maina  </p>
+                            <span>Software developer at Turing</span>
+                            </div>
+                        </div>
+                        <div class="podcast-stats">
+                            <p class="total-views"><span>100</span> views</p>
+                            <div class="like-share">
+                               <a href="#"><i class="fa-solid fa-fire" ></i> 67</a>
+                                <a href="#"><i class="fa-solid fa-share" ></i> 67</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="podcast">
+                    <div class="video-thumbnail">
+
+                    </div>
+                    <div class="podcast-details">
+                        <div class="podcast-header">
+                            <div class="created-on">
+                                may <br>
+                                30
+                            </div>
+                            <div>
+                            <h3 class="podcast-title">How to come up with a startup idea</h3> <br>
+                            <small>Thur 12:00 zoom meeting</small>
+                            </div>
+                        </div>
+                        <p class="podcast-description">How to come up with a startup idea</p>
+                        <div class="host">
+                            <div class='host-image'></div>
+                            <div class="host-info">
+                            <p>Isaac Maina  </p>
+                            <span>Software developer at Turing</span>
+                            </div>
+                        </div>
+                        <div class="podcast-stats">
+                            <p class="total-views"><span>100000</span> views</p>
+                            <div class="like-share">
+                               <a href="#"><i class="fa-solid fa-fire" ></i> 67</a>
+                                <a href="#"><i class="fa-solid fa-share" ></i> 67</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="live-podcasts">
+                <p class='live'>Live <span>see all</span></p><br>
+                 <div class="podcast-item">
+                    <div class='podcast-thumbnail'></div>
+                        <div class="info">
+                            <p class="">How to analyze startup ideas from scratch and run a successful business</p>
+                            <span>isaac maina</span>
+                        </div>
+                </div>
+                  <div class="podcast-item">
+                    <div class='podcast-thumbnail'></div>
+                        <div class="info">
+                            <p class="">How to analyze startup ideas from scratch and run a successful business</p>
+                            <span>isaac maina</span>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock  %}

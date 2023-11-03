@@ -1,0 +1,23 @@
+{% load static %}
+
+<div class="navbar-container">
+  <div class="navbar">
+    <div class="podcast-logo">
+      <img src="{% static "images/logo1.png" %}" alt="">
+    </div>
+    <ul class="navlinks">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="{% url "account_login" %}">Login</a></li>
+      <li><a href="{% url "account_logout" %}">Log out</a></li>
+    </ul>
+    <div class="logged-in-user">
+      <div class="user-image"></div>
+      <p>Maina wambui</p>
+    </div>
+  </div>
+  <ul class="nav-list">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Home</a></li>
+  </ul>
+</div>
